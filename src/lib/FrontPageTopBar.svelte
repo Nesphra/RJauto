@@ -13,10 +13,14 @@
 
 <div>
     <div class = "topLine">
-        <div id="Item1">WE ARE {StoreOpen}</div>
+        <div id="Item1">WE ARE {StoreOpen} Mon-Fri 8am - 5pm</div>
         <div id="Item2">Call Us: +1 (713) 896-4105</div>
         <div id="Item3">Email Us: russell.fuller0872@gmail.com</div>
-        <div id="Socials"><button>In</button>></div>
+        <div id="Socials">
+            <button>In</button>
+            <button>F</button>
+            <button>Tw</button>
+        </div>
     </div>    
 </div>
 
@@ -24,21 +28,20 @@
     .topLine {
         width: 100%;
         height: 30px;
-        background-color: blue;
+        background-color: #4169E1;
         display: flex;
         align-items: center;
     }
 
     .topLine>*{
         width: 100%;
-        background-color: red;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .topLine>*:last-child>button{
-        background-color: non;
-    }
+    /* .topLine>*:last-child>button{
+        
+    } */
 
 </style>
