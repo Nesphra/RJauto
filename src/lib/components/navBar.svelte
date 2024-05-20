@@ -9,7 +9,8 @@
 <style>
     .navBar{
         width: 100%;
-        height: 50px;
+        height: 80px;
         background-color: #4169E1;
+        position: relative;
     }
 </style>
