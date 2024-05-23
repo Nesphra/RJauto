@@ -2,7 +2,7 @@
 
 </script>
 
-<div class="container">
+<div class="container" id="locationAnchorPoint">
     <div class="text">
         <p class="title">Close and obvious.</p>
         <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, officia, minima expedita ea fuga laudantium ducimus impedit excepturi sunt quas placeat voluptate magnam temporibus eaque ullam iste, doloribus et. Tempora?</p>

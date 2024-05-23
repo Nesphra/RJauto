@@ -2,6 +2,7 @@
 	import FrontPageTopBar from '../lib/components/FrontPageTopBar.svelte';
 	import AffordableCare from '../lib/components/affordableCare.svelte';
 	import CarMatters from '../lib/components/carMatters.svelte';
+	import GoodCompany from '../lib/components/goodCompany.svelte';
 	import Location from '../lib/components/location.svelte';
 	import NavBar from '../lib/components/navBar.svelte';
 	import Services from '../lib/components/services.svelte';
@@ -22,19 +23,18 @@
 		<img src="src/lib/images/Image-Source-PlusPNG.com.png" alt="blue car" class="carPic" />
 		<!-- Source : <a title="Blue Race Car PNG" href="https://pluspng.com/blue-race-car-png-9423.html">Blue Race Car PNG</a> -->
 		<div class="frontPageLinks">
-			<li><a href="#servicesAnchorTag">Home & Services</a></li>
-			<li><a href="/prices">Pricing</a></li>
-			<li><a href="#">Location</a></li>
-			<li><a href="#">Meet the Team</a></li>
+			<li><a href="/#servicesAnchorTag">Services</a></li>
+			<li><a href="/#locationAnchorPoint">Location</a></li>
+			<li><a href="/#teamAnchorTag">Meet the Team</a></li>
 		</div>
 	</section>
-	<Services></Services>
-	<NavBar></NavBar>
-    <AffordableCare></AffordableCare>
-    <CarMatters></CarMatters>
-    <Location></Location>
 </div>
-
+<Services></Services>
+<NavBar></NavBar>
+<AffordableCare></AffordableCare>
+<CarMatters></CarMatters>
+<Location></Location>
+<GoodCompany></GoodCompany>
 <style>
 	/* Front page */
 	.landingPage {

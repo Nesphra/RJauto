@@ -1,6 +1,5 @@
 <script>
 	var iconHeight = "20px"
-    // var imgHeight = "300px"
 </script>
 
 <section class="container" id="servicesAnchorTag">

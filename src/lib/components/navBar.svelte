@@ -1,29 +1,49 @@
 <script>
+    import { browser } from '$app/environment';
+    import { onMount } from 'svelte';
+
+    onMount(() => {
+
+        const nav = document.getElementById("navigationBar");
+
+        if (browser) {
+            window.addEventListener("scroll", function(event){
+                var scroll = this.scrollY;
+                if (scroll <= 1342.727294921875){
+                    nav.style.position = "absolute";
+                    nav.style.top = "auto";
+                } else {
+                    nav.style.position = "fixed";
+                    nav.style.top = 0;
+                }
+            });
+        };
+    })
 
 </script>
 
-<div class="navBar">
+<div class="navBar" id="navigationBar">
     <a href="/"><img class="logo" src="#" alt="logo-img"></a>
     <div class="linkList">
-        <li><a href="/services">Services</a></li>
-        <li><a href="#">Location</a></li>
+        <li><a href="/#servicesAnchorTag">Services</a></li>
+        <li><a href="/#locationAnchorPoint">Location</a></li>
         <li><a href="/prices">Pricing</a></li>
         <li><a href="/contact">Contact us</a></li>
     </div>
     <div class="socials">
-        <a href="https://www.instagram.com" target="_blank"><img src="#" alt="in"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="#" alt="f"></a>
-        <a href="https://x.com" target="_blank"><img src="#" alt="X"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="src/lib/images/icons/instagram.svg" alt="instagram"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="src/lib/images/icons/facebook.svg" alt="facebook"></a>
+        <a href="https://x.com" target="_blank"><img src="src/lib/images/icons/twitter.svg" alt="twitter"></a>
     </div>
 </div>
 
 <style>
     .navBar{
+        display: flex;
         position: absolute;
         width: 100%;
         height: 50px;
         background-color: #4169E1;
-        display: flex;
         align-items: center;
         gap: 40px;
         z-index: 1;
@@ -37,7 +57,7 @@
 
     .linkList{
         display: flex;
-        gap: 10px;
+        gap: 30px;
     }
 
     .linkList a{
