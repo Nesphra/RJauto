@@ -1,4 +1,4 @@
-import { GOOGLE_EMAIL } from "$env/static/private";
+import { GOOGLE_EMAIL , GOOGLE_EMAIL_TO, GOOGLE_EMAIL_BCC} from "$env/static/private";
 import transporter from "$lib/emailSetup.server.js";
 
 export const actions = {
@@ -11,10 +11,12 @@ export const actions = {
             console.log(body);
             let html = `<h2>From: ${email}</h2><pre>${body}</pre>`;
 
+            if(subject.trim() == "") throw "empty";
+
             const message = {
                 from: GOOGLE_EMAIL,
-                to: email,
-                bcc: "hello@webjeda.com",
+                to: GOOGLE_EMAIL_TO,
+                // bcc: GOOGLE_EMAIL_BCC,
                 subject: subject,
                 text: body,
                 html: html,

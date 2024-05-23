@@ -4,68 +4,73 @@
     export let form;
 </script>
 
+<NavBar></NavBar>
+<div class="bg-rect"></div>
 <div class="wrapper">
-    <NavBar></NavBar>
-    <fieldset>
-        <legend>Send Emails</legend>
-        <form method="POST" class="container">
-            <div class="input">
-                <label for="">Your email:</label>
-                <input name="to" type="email" value="" placeholder="email"/>
-            </div>
-            <div class="input">
-                <label for="">Subject:</label>
-                <input name="subject" type="text" value="" placeholder="subject"/>
-            </div>
-            <div class="input">
-                <label for="">Body:</label>
-                <textarea name="body" rows="6" value="" placeholder="body"/>
-            </div>
-            <button type="submit">Send</button>
-        </form>
-        <p class="success">{form?.success || ""}</p>
-    </fieldset>
+    <p>Contact form</p>
+    <div class="card">
+        <div class="form">
+            <form method="POST" class="container">
+                <p>Email us</p>
+                <input class="input" name="to" type="email" value="" placeholder="Email"/>
+                <input class="input" name="subject" type="text" value="" placeholder="Subject"/>
+                <textarea class="input" name="body" rows="6" value="" placeholder="Request"/>
+                <button type="submit">Send</button>
+                <p class="success">{form?.success || ""}</p>
+            </form>
+        </div>
+        <div class="info"></div>
+    </div>
 </div>
 
 <style>
-    .wrapper {
-        max-width: 800px;
-        margin: 2em auto;
+    .wrapper{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    fieldset {
-        padding: 2em;
-        box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+
+    .bg-rect {
+		width: 110%;
+		height: 1000px;
+		background-color: #363636;
+		border-radius: 200px;
+		position: absolute;
+		transform: translate(-8%, -60%) rotate(-9.3deg);
+		z-index: -1;
+	}
+
+    .card{
+        height: 500px;
+        width: 800px;
+        display: flex;
+        filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25)); 
     }
-    legend {
-        font-weight: bold;
-        font-size: 2em;
-        padding: 0 0.25em;
-        color: #333;
+
+    .form {
+        width: 100%;
+        height: 100%;
+        background-color: #EFF0F6;
     }
-    .container {
-        max-width: 400px;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
     }
-    .input {
-        display: grid;
-        margin-bottom: 1.5em;
+
+    .input{
+        width: 80%;
+        
     }
-    label {
-        font-weight: 600;
-        margin-bottom: 0.25em;
-        color: #555;
-    }
-    input {
-        padding: 5px;
-    }
-    button {
-        cursor: pointer;
-        padding: 0.5em 1em;
-        border-radius: 4px;
-        border: 1px solid rgb(5, 151, 64);
-        background-color: rgb(5, 151, 64);
-        color: white
-    }
-    .success {
-        color: #0a5;
+
+    .info{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(154deg, #4169E1 14.5%, #1F3370 87.86%); 
     }
 </style>
