@@ -38,7 +38,7 @@ export const actions = {
             await sendEmail(message);
 
             return {
-                success: "Email is sent",
+                success: "Email has been sent!",
             };
         } catch (error) {
             console.error(error);

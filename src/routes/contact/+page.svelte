@@ -7,23 +7,53 @@
 <NavBar></NavBar>
 <div class="bg-rect"></div>
 <div class="wrapper">
-    <p>Contact form</p>
+    <p class="mainTitle">Contact form</p>
     <div class="card">
-        <div class="form">
+        <div class="form" >
             <form method="POST" class="container">
-                <p>Email us</p>
-                <input class="input" name="to" type="email" value="" placeholder="Email"/>
-                <input class="input" name="subject" type="text" value="" placeholder="Subject"/>
-                <textarea class="input" name="body" rows="6" value="" placeholder="Request"/>
+                <p class="title">Email us</p>
+                <input class="input" name="to" type="email" value="" placeholder="Email" autocomplete="off"/>
+                <input class="input" name="subject" type="text" value="" placeholder="Subject" autocomplete="off"/>
+                <textarea class="input" name="body" rows="6" value="" placeholder="Request" autocomplete="off"/>
                 <button type="submit">Send</button>
                 <p class="success">{form?.success || ""}</p>
             </form>
         </div>
-        <div class="info"></div>
+        <div class="info">
+            <div class="info-info">
+                <p class="title">Our information</p>
+                <hr>
+                <p>We're open for any suggestion or just to have a chat.</p>
+                <ul>
+                    <img><p>Address:</p>
+                    <img><p>Phone:</p>
+                    <img><p>Email:</p>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
 <style>
+    .info-info{
+        width: 80%;
+    }
+
+    .info-info hr{
+        width: 50px;
+        margin: 10px 0 0 0;
+    }
+    
+    .info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: #FFF; 
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(154deg, #4169E1 14.5%, #1F3370 87.86%); 
+    }
+
     .wrapper{
         height: 100vh;
         display: flex;
@@ -43,6 +73,8 @@
 	}
 
     .card{
+        border-radius: 20px;
+        overflow: hidden;
         height: 500px;
         width: 800px;
         display: flex;
@@ -58,19 +90,49 @@
     .container{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center;
+        gap: 10px;
         height: 100%;
     }
 
-    .input{
+    .title{
+        padding-top: 20px;
+        font-size: 26px;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    .container>*:nth-child(2), .container>*:nth-child(3), .container>*:nth-child(4){
+        padding: 8px;
+        border: none;
+        resize: none;
+        border-radius: 5px;
         width: 80%;
-        
     }
 
-    .info{
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(154deg, #4169E1 14.5%, #1F3370 87.86%); 
+    textArea{
+        height: 180px;
+    }
+
+    .container button{
+        background: linear-gradient(270deg, #4169E1 0%, #2C448B 100%); 
+        padding: 10px 20px 10px 20px;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-family: "Inter", sans-serif;
+        font-weight: 200;
+        font-size: 15px;
+    }
+
+    .success{
+        color: rgb(60, 183, 66);
+    }
+
+    .mainTitle{
+        margin: 10px;
+        color: #85B2F4;
+        font-weight: 300;
+        font-size: 26px;
     }
 </style>

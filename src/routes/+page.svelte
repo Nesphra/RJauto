@@ -2,10 +2,12 @@
 	import FrontPageTopBar from '../lib/components/FrontPageTopBar.svelte';
 	import AffordableCare from '../lib/components/affordableCare.svelte';
 	import CarMatters from '../lib/components/carMatters.svelte';
+	import Footer from '../lib/components/footer.svelte';
 	import GoodCompany from '../lib/components/goodCompany.svelte';
 	import Location from '../lib/components/location.svelte';
 	import NavBar from '../lib/components/navBar.svelte';
 	import Services from '../lib/components/services.svelte';
+	import VehicleLove from '../lib/components/vehicleLove.svelte';
 </script>
 
 <div class="home">
@@ -16,8 +18,8 @@
 			<h3>YOUR VEHICLE IS</h3>
 			<h1>SAFE IN OUR HANDS</h1>
 			<div class="app-serv">
-				<a href="/contact">Make an appointment</a>
-				<a href="/prices">See our prices</a>
+				<a href="/contact">Contact Us</a>
+				<a href="/prices">See our Prices</a>
 			</div>
 		</div>
 		<img src="src/lib/images/Image-Source-PlusPNG.com.png" alt="blue car" class="carPic" />
@@ -35,6 +37,9 @@
 <CarMatters></CarMatters>
 <Location></Location>
 <GoodCompany></GoodCompany>
+<VehicleLove></VehicleLove>
+<Footer></Footer>
+
 <style>
 	/* Front page */
 	.landingPage {
@@ -59,47 +64,46 @@
 		align-items: center;
 	}
 
-    .safeVehicle>*:first-child{
-        color: #EFF0F6;
-        font-weight: 300;
-        font-size: 24px;
-        margin: 0;
-    }
+	.safeVehicle > *:first-child {
+		color: #eff0f6;
+		font-weight: 300;
+		font-size: 24px;
+		margin: 0;
+	}
 
-    .safeVehicle>*:nth-child(2){
-        color: #EFF0F6;
-        font-weight: 500;
-        font-size: 56px;
-        margin:0;
-    }
+	.safeVehicle > *:nth-child(2) {
+		color: #eff0f6;
+		font-weight: 500;
+		font-size: 56px;
+		margin: 0;
+	}
 
-    .app-serv{
-        display: flex;
-        column-gap: 20px;
-        padding: 20px;
-    }
+	.app-serv {
+		display: flex;
+		column-gap: 20px;
+		padding: 20px;
+	}
 
-    .app-serv>a{
+	.app-serv>a{
         padding: 15px;
         border-radius: 10px;
     }
 
-    .app-serv>*:first-child{
-        background-color: #EFF0F6;
-        color: #363636;
-    }
+	.app-serv > *:first-child {
+		background-color: #eff0f6;
+		color: #363636;
+	}
 
-    .app-serv>*:last-child{
-        background-color: #4169E1;
-        color: #EFF0F6;
-        border: 1px solid #EFF0F6; 
-    }
-    
+	.app-serv > *:last-child {
+		background-color: #4169e1;
+		color: #eff0f6;
+	}
+
 	.frontPageLinks {
 		position: absolute;
 		top: 320px;
 		margin-left: 50px;
-        font-size: 20px;
+		font-size: 20px;
 	}
 
 	.frontPageLinks > li::marker {
@@ -119,9 +123,8 @@
 		color: #87ceeb;
 	}
 
-   .frontPageLinks>li:hover {
-        transform: translateX(5px);
-        transition: 0.2s;
-    }
-
+	.frontPageLinks > li:hover {
+		transform: translateX(5px);
+		transition: 0.2s;
+	}
 </style>
