@@ -5,18 +5,23 @@
     onMount(() => {
 
         const nav = document.getElementById("navigationBar");
+        var rect = nav.getBoundingClientRect();
 
         if (browser) {
-            window.addEventListener("scroll", function(event){
-                var scroll = this.scrollY;
-                if (scroll <= 1342.727294921875){
-                    nav.style.position = "absolute";
-                    nav.style.top = "auto";
+            function update() {
+                const elem = document.getElementById("navigationBar");
+                const rect = elem.getBoundingClientRect();
+
+                if (rect.top > 0){
+
                 } else {
-                    nav.style.position = "fixed";
-                    nav.style.top = 0;
+                    
                 }
-            });
+
+            }
+
+            document.addEventListener("scroll", update);
+            update();
         };
     })
 
