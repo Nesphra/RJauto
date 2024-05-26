@@ -5,25 +5,24 @@
     onMount(() => {
 
         const nav = document.getElementById("navigationBar");
-        var rect = nav.getBoundingClientRect();
+        let initialOffsetTop;
 
         if (browser) {
-            function update() {
-                const elem = document.getElementById("navigationBar");
-                const rect = elem.getBoundingClientRect();
+            initialOffsetTop = nav.getBoundingClientRect().top + window.scrollY;
 
-                if (rect.top > 0){
+            window.addEventListener("scroll", function() {
+                var scroll = window.scrollY;
 
+                if (scroll <= initialOffsetTop) {
+                    nav.style.position = "absolute";
+                    nav.style.top = "auto";
                 } else {
-                    
+                    nav.style.position = "fixed";
+                    nav.style.top = 0;
                 }
-
-            }
-
-            document.addEventListener("scroll", update);
-            update();
-        };
-    })
+            });
+        }
+    });
 
 </script>
 
