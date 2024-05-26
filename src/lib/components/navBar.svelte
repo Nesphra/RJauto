@@ -5,11 +5,15 @@
     onMount(() => {
 
         const nav = document.getElementById("navigationBar");
+        let initialOffsetTop;
 
         if (browser) {
-            window.addEventListener("scroll", function(event){
-                var scroll = this.scrollY;
-                if (scroll <= 1342.727294921875){
+            initialOffsetTop = nav.getBoundingClientRect().top + window.scrollY;
+
+            window.addEventListener("scroll", function() {
+                var scroll = window.scrollY;
+
+                if (scroll <= initialOffsetTop) {
                     nav.style.position = "absolute";
                     nav.style.top = "auto";
                 } else {
@@ -17,8 +21,8 @@
                     nav.style.top = 0;
                 }
             });
-        };
-    })
+        }
+    });
 
 </script>
 
