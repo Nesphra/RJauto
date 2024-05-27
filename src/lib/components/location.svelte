@@ -4,13 +4,13 @@
 
 <div class="container" id="locationAnchorPoint">
     <div class="text">
-        <p class="title">Close and obvious.</p>
+        <p class="title">We're right here.</p>
         <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, officia, minima expedita ea fuga laudantium ducimus impedit excepturi sunt quas placeat voluptate magnam temporibus eaque ullam iste, doloribus et. Tempora?</p>
     </div>
     <div class="maps-container">
         <iframe
-            width="600"
-            height="450"
+            width="100%"
+            height="100%"
             style="border:0"
             loading="lazy"
             allowfullscreen
@@ -23,7 +23,7 @@
 
 <style>
     .container{
-        height: 600px;
+        height: 100vh;
         display: flex;
         padding-inline: 100px;
         justify-content: space-around;
@@ -33,7 +33,7 @@
 
     .maps-container{
         width: 50%;
-        height: 80%;
+        height: 60%;
         background-color: black;
     }
 

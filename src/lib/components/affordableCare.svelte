@@ -30,15 +30,21 @@
 
 <style>
     .body{
+        padding-top: 50px;
         position: relative; 
         display: flex;
+        align-items: center;
+        justify-content: space-around;
         flex-direction: column;
         align-items: center;
+        min-height: 100vh;
     }
 
     .bodyTitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 90%;
-        margin-block: 100px;
         font-weight: 200;
         font-size: 35px;
     }
@@ -46,10 +52,10 @@
     .container{
         display: grid;
         height: 60%;
-        width: 90%;
+        width: 80%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 2em;
+        gap: 2em 5em;
         margin-bottom: 100px;
     }
 

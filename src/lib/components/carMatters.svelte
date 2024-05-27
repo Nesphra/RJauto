@@ -10,7 +10,7 @@
 <style>
     .container{
         background-color: #363636;
-        height: 600px;
+        padding: 30px;
         display: flex;
         padding-inline: 100px;
         justify-content: space-around;
@@ -19,8 +19,7 @@
     }
 
     .img-container{
-        width: 50%;
-        height: 80%;
+        width: 40%;
     }
 
     .image{

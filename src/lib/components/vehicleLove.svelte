@@ -9,6 +9,8 @@
         align-items: center;
         justify-content: space-around;
         padding: 100px;
+        background-color: #363636;
+        color: #EFF0F6;
     }
 
     .wrapper>*:first-child{

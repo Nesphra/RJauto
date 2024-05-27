@@ -28,8 +28,8 @@
 <style>
     .container{
         width: 100%;
-        background-color: #363636;
-        color: #EFF0F6;
+        background-color: #EFF0F6;
+        color: #363636;
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -16,57 +16,47 @@
     // })
 </script>
 
-<Splide hasTrack={ false } 
-    options={{
-        type   : 'loop',
-        padding: '20%',
-        autoplay: true,
-    }}
-    >    
-    <div class="customWrapper">      
-        <SplideTrack>
-            <SplideSlide>
-                <div class="container">
-                    <div class="card">
-                        <div class="text">
-                            <h1>Fleet Maintenance</h1>
-                            <p class="body">yo</p>
-                            <a href="/price">See Price</a>
-                        </div>
-                        <div class="image">
-                            <img class="image" src="src/lib/images/serviceImages/mechanicDude.jpg" alt="Image 1"/>
-                        </div>
+<Splide hasTrack={ false } options={{
+    type: 'loop',
+    padding: '25%',
+    autoplay: true,
+}}>    
+    <SplideTrack>
+        <SplideSlide>
+            <div class="container">
+                <div class="card">
+                    <div class="text">
+                        <h1>Fleet Maintenance</h1>
+                        <a href="/prices">Learn More</a>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="src/lib/images/serviceImages/mechanic.jpg" alt="Image 1"/>
                     </div>
                 </div>
-            </SplideSlide>
-            <SplideSlide>
-                <div class="container">
-                    <div class="card">
-                        <div class="text">
-                            <h1>Fleet Maintenance</h1>
-                            <p class="body">yo</p>
-                            <a href="/price">See Price</a>
-                        </div>
-                        <div class="image">
-                            <img class="image" src="src/lib/images/serviceImages/mechanicDude.jpg" alt="Image 1"/>
-                        </div>
+            </div>
+        </SplideSlide>
+        <SplideSlide>
+            <div class="container">
+                <div class="card">
+                    <div class="text">
+                        <h1>Tire Work</h1>
+                        <a href="/prices">Learn More</a>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="src/lib/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg" alt="Image 1"/>
                     </div>
                 </div>
-            </SplideSlide>
-        </SplideTrack>
-    </div>
+            </div>
+        </SplideSlide>
+    </SplideTrack>
 </Splide>
 
 <style>
     @import '@splidejs/svelte-splide/css/sea-green';
 
-    .splide__pagination {
-        counter-reset: pagination-num;
-    }
-
     .container{
         width: 100%;
-        height: 400px;
+        height: 300px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -91,9 +81,28 @@
 
     .text{
         color: #FFF;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+
+    a {
+        padding: 10px 15px 10px 15px;
+        font-size: 12px;
+        width:min-content;
+        white-space: nowrap;
+        border-radius: 6px;
+        background-color: #18A0FB;
+        color: #EFF0F6;
+    }
+
+    a:hover{
+        transform: scale(1.1) rotate(4deg);
     }
 </style>

@@ -36,8 +36,8 @@
 <AffordableCare></AffordableCare>
 <CarMatters></CarMatters>
 <Location></Location>
-<GoodCompany></GoodCompany>
 <VehicleLove></VehicleLove>
+<GoodCompany></GoodCompany>
 <Footer></Footer>
 
 <style>
