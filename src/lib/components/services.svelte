@@ -9,7 +9,6 @@
         <h1>Our Featured Services</h1>
         <h5>Our commitment to excellence ensures that we provide everything you need under one roof.</h5>
     </div>
-
     <CardSlider></CardSlider>
 </section>
 
@@ -44,5 +43,4 @@
         font-weight: 300;
         font-size: 16px;
     }
-
 </style>
