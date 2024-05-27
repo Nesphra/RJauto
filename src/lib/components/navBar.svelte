@@ -94,4 +94,20 @@
         margin-left: 30px;
     }
 
+    .socials{
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        transition: 0.2s;
+    }
+
 </style>
