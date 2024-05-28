@@ -15,7 +15,9 @@
 		<div class="topBar">
 			<FrontPageTopBar></FrontPageTopBar>
 		</div>
-		<div class="bg-rect"></div>
+		<div class="wrapperBg">
+			<div class="bg-rect"></div>
+		</div>
 		<div class="safeVehicle">
 			<h3>YOUR VEHICLE IS</h3>
 			<h1>SAFE IN OUR HANDS</h1>
@@ -52,13 +54,21 @@
 		}
 		.landingPage{
 			margin-top: 80px;
-			height: 500px !important;
+		}
+		.carPic{
+			top: 320px !important;
+			height: auto !important;
+			height: 15rem !important;
 		}
 	}
 
 	/* Front page */
 	.landingPage {
 		height: 580px;
+	}
+
+	.wrapperBg{
+		position: relative;
 	}
 
 	.bg-rect {
@@ -91,6 +101,7 @@
 		font-weight: 500;
 		font-size: 3rem;
 		margin: 0;
+		text-align: center;
 	}
 
 	.app-serv {

@@ -13,9 +13,9 @@
 </section>
 
 <style>
-    @media screen and (max-width: 800px) {
+    /* @media screen and (max-width: 800px) {
         
-    }
+    } */
 
     .container{
         margin: auto;
@@ -34,6 +34,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
     .servicesText>*:first-child{

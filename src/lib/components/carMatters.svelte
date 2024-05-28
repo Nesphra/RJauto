@@ -12,10 +12,11 @@
     @media screen and (max-width: 950px) {
         .container{
             flex-direction: column;
+            padding-inline: 10px !important;
         }
         .text{
             text-align: center;
-            width: 90% !important;
+            width: 100% !important;
             align-items: center;
         }
         .img-container{

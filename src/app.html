@@ -12,7 +12,9 @@
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
+		<div class="wrapper">
+			<div style="display: contents">%sveltekit.body%</div>
+		</div>
 	</body>
 </html>
 
@@ -31,6 +33,10 @@
 		font-style: normal;
 		font-variation-settings:
 			"slnt" -10;
+	}
+
+	.wrapper{
+		overflow-x: hidden;
 	}
 	
 	body {

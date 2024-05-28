@@ -99,7 +99,7 @@
     }
 
     .box{
-        width: 40vw;
+        width: clamp( 200px, 40vw, 350px);
         height: 100vh;
         position: fixed;
         top: 0;
