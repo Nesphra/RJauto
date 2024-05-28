@@ -8,17 +8,8 @@
             <p class="title">We're right here.</p>
             <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, officia, minima expedita ea fuga laudantium ducimus impedit excepturi sunt quas placeat voluptate magnam temporibus eaque ullam iste, doloribus et. Tempora?</p>
         </div>
-        <div class="maps-container">
-            <iframe
-                width="100%"
-                height="100%"
-                style="border:0"
-                loading="lazy"
-                allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed/v1/place?key=API_KEY
-                    &q=Space+Needle,Seattle+WA">
-            </iframe>
+        <div class="maps-container" id="map">
+            
         </div>
     </div>
 </div>
