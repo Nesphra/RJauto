@@ -58,7 +58,13 @@
 		.carPic{
 			top: 320px !important;
 			height: auto !important;
-			height: 15rem !important;
+			height: clamp(100px, 50vw, 300px) !important;
+		}
+	}
+
+	@media screen and (max-width: 450px) {
+		.landingPage{
+			height: 450px !important;
 		}
 	}
 

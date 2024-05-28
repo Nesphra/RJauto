@@ -54,6 +54,10 @@
 <style>
     @import '@splidejs/svelte-splide/css/sea-green';
 
+    @media screen and (max-width: 600px){
+        
+    }
+
     .container{
         width: 100%;
         height: 300px;
