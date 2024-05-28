@@ -7,6 +7,7 @@
     @media screen and (max-width: 950px){
         .wrapper{
             flex-direction: column;
+            padding-inline: 0 !important;
         }
     }
 
