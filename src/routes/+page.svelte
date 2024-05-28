@@ -24,8 +24,7 @@
 				<a href="/prices">See our Prices</a>
 			</div>
 		</div>
-		<img src="src/lib/images/Image-Source-PlusPNG.com.png" alt="blue car" class="carPic" />
-		<!-- Source : <a title="Blue Race Car PNG" href="https://pluspng.com/blue-race-car-png-9423.html">Blue Race Car PNG</a> -->
+		<img src="/images/blueCar.png" alt="blue car" class="carPic" />
 		<div class="frontPageLinks">
 			<li><a href="/#servicesAnchorTag">Services</a></li>
 			<li><a href="/#locationAnchorPoint">Location</a></li>
