@@ -8,6 +8,22 @@
 </div>
 
 <style>
+
+    @media screen and (max-width: 950px) {
+        .container{
+            flex-direction: column;
+        }
+        .text{
+            text-align: center;
+            width: 90% !important;
+            align-items: center;
+        }
+        .img-container{
+            display: none;
+            margin-bottom: 50px;
+        }
+    }
+
     .container{
         background-color: #363636;
         padding: 30px;
@@ -19,10 +35,14 @@
     }
 
     .img-container{
-        width: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .image{
+        max-width: 500px;
         width: 100%;
         height: 100%;
         border-radius: 30px;
@@ -30,7 +50,7 @@
     }
 
     .text{
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;

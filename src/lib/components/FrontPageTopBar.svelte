@@ -16,9 +16,9 @@
 
 <div>
     <div class = "topLine">
-        <div class="item1"><p>WE ARE <span style="color: {color};">{StoreOpen}</span> <span style="color: white; font-weight: 200; font-style: normal;">Mon-Fri 8am - 5pm</span></p></div>
+        <div class="item1"><p>WE ARE <span style="color: {color};">{StoreOpen}</span> <span class="disappear" style="color: white; font-weight: 200; font-style: normal;">Mon-Fri 8am - 5pm</span></p></div>
         <div class="item2"><p>Call Us: <span style="color: white; font-weight: 200; font-style: normal;">+1 (713) 896-4105</span></p></div>
-        <div class="item3"><p>Visit Us <span style="color: #FFFFFF;"><span style="color: white; font-weight: 200; font-style: normal;">Location</span></span></p></div>
+        <div class="item3"><p>Visit Us <span style="color: #FFFFFF;"><span style="color: white; font-weight: 200; font-style: normal;">13150 FM 529 <span class="disappear">#127, Houston, TX</span></span></span></p></div>
         <div class="socials">
             <a href="https://www.instagram.com" target="_blank"><img src="src/lib/images/icons/instagram.svg" alt="instagram"></a>
             <a href="https://www.facebook.com/" target="_blank"><img src="src/lib/images/icons/facebook.svg" alt="facebook"></a>
@@ -28,6 +28,12 @@
 </div>
 
 <style>
+    @media screen and (max-width: 1220px) {
+        .disappear{
+            display: none;
+        }
+    }
+
     .topLine {
         width: 100%;
         height: 30px;
@@ -58,6 +64,8 @@
         font-style: italic;
         font-weight: 500;
         color: #242424;
+        min-width: 100%;
+        text-align: center;
     }
 
     .socials{

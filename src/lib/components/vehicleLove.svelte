@@ -4,6 +4,12 @@
 </div>
 
 <style>
+    @media screen and (max-width: 950px){
+        .wrapper{
+            flex-direction: column;
+        }
+    }
+
     .wrapper{
         display: flex;
         align-items: center;
@@ -16,6 +22,7 @@
     .wrapper>*:first-child{
         font-weight: 200;
         font-size: 36px;
+        text-align: center;
     }
 
     .wrapper>*:last-child{
@@ -25,5 +32,10 @@
         border-radius: 6px;
         background-color: #18A0FB;
         color: #EFF0F6;
+    }
+
+    .wrapper>*:last-child:hover{
+        color: #363636;
+        background-color: #EFF0F6;
     }
 </style>

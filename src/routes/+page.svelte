@@ -12,7 +12,9 @@
 
 <div class="home">
 	<section class="landingPage">
-		<FrontPageTopBar></FrontPageTopBar>
+		<div class="topBar">
+			<FrontPageTopBar></FrontPageTopBar>
+		</div>
 		<div class="bg-rect"></div>
 		<div class="safeVehicle">
 			<h3>YOUR VEHICLE IS</h3>
@@ -41,6 +43,20 @@
 <Footer></Footer>
 
 <style>
+
+	@media screen and (max-width: 800px) {
+		.frontPageLinks{
+			display: none;
+		}
+		.topBar{
+			display: none;
+		}
+		.landingPage{
+			margin-top: 80px;
+			height: 500px !important;
+		}
+	}
+
 	/* Front page */
 	.landingPage {
 		height: 580px;
@@ -74,7 +90,7 @@
 	.safeVehicle > *:nth-child(2) {
 		color: #eff0f6;
 		font-weight: 500;
-		font-size: 56px;
+		font-size: 3rem;
 		margin: 0;
 	}
 
@@ -94,9 +110,17 @@
 		color: #363636;
 	}
 
+	.app-serv > *:first-child:hover{
+		transform: scale(1.1);
+	}
+
 	.app-serv > *:last-child {
 		background-color: #4169e1;
 		color: #eff0f6;
+	}
+
+	.app-serv > *:last-child:hover{
+		transform: scale(1.1);
 	}
 
 	.frontPageLinks {

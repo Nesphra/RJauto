@@ -26,6 +26,12 @@
 </div>
 
 <style>
+    @media screen and (max-width: 800px) {
+        .pictures{
+            width: 100% !important;
+        }
+    }
+
     .container{
         width: 100%;
         background-color: #EFF0F6;
@@ -72,12 +78,15 @@
         font-size: 36px;
         font-weight: 200;
         margin: 0 0 20px 0;
+        text-align: center;
     }
     
     .subtitle {
         margin: 0;
         font-weight: 200;
         opacity: 0.8;
+        text-align: center;
+        padding-inline: 40px;
     }
 
 </style>

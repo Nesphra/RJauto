@@ -22,11 +22,40 @@
                 }
             });
         }
+
     });
 
+    function dragBox() {
+        const box = document.getElementById("boxID");
+        
+        if (box.style.transform != "translate(0px)"){
+            box.style.transform = "translate(0)"
+        } else {
+            box.style.transform = "translate(-101%)"
+        }
+
+        console.log(box.style.transform)
+    };
 </script>
 
 <div class="navBar" id="navigationBar">
+    <div class="box" id="boxID">
+        <div class="linkListBox">
+            <div class="socialsBox">
+                <a href="https://www.instagram.com" target="_blank"><img src="src/lib/images/icons/instagram.svg" alt="instagram"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="src/lib/images/icons/facebook.svg" alt="facebook"></a>
+                <a href="https://x.com" target="_blank"><img src="src/lib/images/icons/twitter.svg" alt="twitter"></a>
+            </div>
+            <li><a href="/"><img class="logo" src="#" alt="logo-img"></a></li>
+            <li><a href="/#servicesAnchorTag" on:click={dragBox}>Services</a></li>
+            <hr>
+            <li><a href="/#locationAnchorPoint" on:click={dragBox}>Location</a></li>
+            <hr>
+            <li><a href="/prices" on:click={dragBox}>Pricing</a></li>
+            <hr>
+            <li><a href="/contact" on:click={dragBox}>Contact us</a></li>
+        </div>
+    </div>
     <a href="/"><img class="logo" src="#" alt="logo-img"></a>
     <div class="linkList">
         <li><a href="/#servicesAnchorTag">Services</a></li>
@@ -39,9 +68,66 @@
         <a href="https://www.facebook.com/" target="_blank"><img src="src/lib/images/icons/facebook.svg" alt="facebook"></a>
         <a href="https://x.com" target="_blank"><img src="src/lib/images/icons/twitter.svg" alt="twitter"></a>
     </div>
+    <a href={void(0)} on:click={dragBox} class="boorger"><img src="#" alt="boorger"></a>
 </div>
 
 <style>
+    @media screen and (max-width: 800px) {
+        .linkList {
+            display: none !important;
+        }
+        .socials{
+            display: none !important;
+        }
+        .navBar{
+            position: fixed !important;
+            top: 0 !important;
+        }
+    }
+
+    @media screen and (min-width: 800px) {
+        .boorger{
+            display: none;
+        }
+    }
+
+    hr{
+        width: 100%;
+    }
+
+    .box{
+        width: 40vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        transform: translate(-101%);
+        background-color: #5a5a5a;
+        border-radius: 0 15px 15px 0;
+        transition: 0.2s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linkListBox li{
+        padding-inline: 20px;
+        padding-block: 10px;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .linkListBox {
+        margin-top: 30px;
+    }
+
+    .socialsBox{
+        bottom: 0;
+    }
+
+    .boorger:hover{
+        cursor: pointer;
+    }
+
     .navBar{
         display: flex;
         position: absolute;
@@ -86,7 +172,8 @@
         left: 0; 
     }
 
-    .linkList li{
+    .linkList li,
+    .linkListBox li{
         list-style: none;
     }
 
@@ -94,12 +181,15 @@
         margin-left: 30px;
     }
 
-    .socials{
+    .socials,
+    .socialsBox{
         display: flex;
         column-gap: 10px;
         align-items: center;
         justify-content: center;
         width: 100px;
+        position: absolute;
+        right: 30px;
     }
 
     img{

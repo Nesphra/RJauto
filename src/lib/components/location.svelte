@@ -3,29 +3,52 @@
 </script>
 
 <div class="container" id="locationAnchorPoint">
-    <div class="text">
-        <p class="title">We're right here.</p>
-        <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, officia, minima expedita ea fuga laudantium ducimus impedit excepturi sunt quas placeat voluptate magnam temporibus eaque ullam iste, doloribus et. Tempora?</p>
-    </div>
-    <div class="maps-container">
-        <iframe
-            width="100%"
-            height="100%"
-            style="border:0"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed/v1/place?key=API_KEY
-                &q=Space+Needle,Seattle+WA">
-        </iframe>
+    <div class="containerBody">
+        <div class="text">
+            <p class="title">We're right here.</p>
+            <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, officia, minima expedita ea fuga laudantium ducimus impedit excepturi sunt quas placeat voluptate magnam temporibus eaque ullam iste, doloribus et. Tempora?</p>
+        </div>
+        <div class="maps-container">
+            <iframe
+                width="100%"
+                height="100%"
+                style="border:0"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+                    &q=Space+Needle,Seattle+WA">
+            </iframe>
+        </div>
     </div>
 </div>
 
 <style>
+    @media screen and (max-width: 950px) {
+        .containerBody{
+            flex-direction: column;
+            padding-inline: 10px !important;
+        }
+        .maps-container{
+            width: 100% !important;
+        }
+        .text{
+            width: 100% !important;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
     .container{
-        height: 100vh;
         display: flex;
-        padding-inline: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerBody{
+        height: clamp(400px, 100vh, 1200px);
+        width: clamp(200px, 80%, 1500px);
+        display: flex;
         justify-content: space-around;
         align-items: center;
         column-gap: 80px;

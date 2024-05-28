@@ -25,9 +25,8 @@
                 <hr>
                 <p>We're open for any suggestion or just to have a chat.</p>
                 <ul>
-                    <img><p>Address:</p>
-                    <img><p>Phone:</p>
-                    <img><p>Email:</p>
+                    <img><p>Address: 13150 FM 529 #127, Houston, TX</p>
+                    <img><p>Phone: +1 (713) 896-4105</p>
                 </ul>
             </div>
         </div>
@@ -35,6 +34,22 @@
 </div>
 
 <style>
+
+    @media screen and (max-width: 800px) {
+        .info{
+            display: none !important;
+        }
+        .card{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form{
+            width: 60% !important;
+            border-radius: 15px;
+        }
+    }
+
     .info-info{
         width: 80%;
     }

@@ -13,6 +13,10 @@
 </section>
 
 <style>
+    @media screen and (max-width: 800px) {
+        
+    }
+
     .container{
         margin: auto;
         width: 80%;
@@ -42,5 +46,6 @@
         margin: 5px 0 30px 0;
         font-weight: 300;
         font-size: 16px;
+        text-align: center;
     }
 </style>
