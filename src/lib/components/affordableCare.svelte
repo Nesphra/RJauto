@@ -65,7 +65,7 @@
     .container{
         display: grid;
         height: 60%;
-        width: clamp(400px, 80%, 1500px);
+        width: clamp(200px, 80%, 1500px);
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 2em 5em;

@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="img-container"><img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="handsome mechanic"></div>
+    <div class="img-container"><img class="image" src={"/images/place/place1.png"} alt="handsome mechanic"></div>
     <div class="text">
         <p class="title">Every repair <span style="color:#87CEEB">matters</span> to us.</p>
         <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, officia, minima expedita ea fuga laudantium ducimus impedit excepturi sunt quas placeat voluptate magnam temporibus eaque ullam iste, doloribus et. Tempora?</p>
@@ -36,7 +36,7 @@
     }
 
     .img-container{
-        width: 100%;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
