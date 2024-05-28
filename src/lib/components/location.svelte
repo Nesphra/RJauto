@@ -1,5 +1,5 @@
 <script>
-
+    import LeafletMap from '$lib/LeafletMap.svelte'
 </script>
 
 <div class="container" id="locationAnchorPoint">
@@ -9,7 +9,7 @@
             <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, officia, minima expedita ea fuga laudantium ducimus impedit excepturi sunt quas placeat voluptate magnam temporibus eaque ullam iste, doloribus et. Tempora?</p>
         </div>
         <div class="maps-container" id="map">
-            
+            <LeafletMap></LeafletMap>
         </div>
     </div>
 </div>
@@ -49,6 +49,9 @@
         width: 50%;
         height: 60%;
         background-color: black;
+        overflow: hidden;
+        border-radius: 15px;
+        z-index: 0;
     }
 
     .text{

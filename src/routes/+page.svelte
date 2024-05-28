@@ -8,6 +8,9 @@
 	import NavBar from '../lib/components/navBar.svelte';
 	import Services from '../lib/components/services.svelte';
 	import VehicleLove from '../lib/components/vehicleLove.svelte';
+
+	export const ssr = false
+
 </script>
 
 <div class="home">
@@ -42,7 +45,6 @@
 <VehicleLove></VehicleLove>
 <GoodCompany></GoodCompany>
 <Footer></Footer>
-
 <style>
 
 	@media screen and (max-width: 800px) {
