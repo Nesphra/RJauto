@@ -34,9 +34,15 @@
 <style>
     @import 'leaflet/dist/leaflet.css';
 
-    @media screen and (min-height:600px){
+    @media screen and (max-width:950px){
         main div {
-            height: 400px !important;
+            height: 450px !important;
+        }
+    }
+
+    @media screen and (max-width:400px){
+        main div{
+            height: 300px !important;
         }
     }
 

@@ -1,5 +1,5 @@
 <script>
-    import LeafletMap from '$lib/LeafletMap.svelte'
+    import LeafletMap from '../leafletMap.svelte'
 </script>
 
 <div class="container" id="locationAnchorPoint">
