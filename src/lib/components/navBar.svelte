@@ -1,6 +1,9 @@
 <script>
     import { browser } from '$app/environment';
     import { onMount } from 'svelte';
+	import Hamburger from 'svelte-hamburger';
+
+    let open = false;
 
     onMount(() => {
 
@@ -68,7 +71,7 @@
         <a href="https://www.facebook.com/" target="_blank"><img src="src/lib/images/icons/facebook.svg" alt="facebook"></a>
         <a href="https://x.com" target="_blank"><img src="src/lib/images/icons/twitter.svg" alt="twitter"></a>
     </div>
-    <a href={void(0)} on:click={dragBox} class="boorger"><img src="#" alt="boorger"></a>
+    <a href={void(0)} on:click={dragBox} class="boorger"><Hamburger {open} on:click={() => open = !open} /></a>
 </div>
 
 <style>
