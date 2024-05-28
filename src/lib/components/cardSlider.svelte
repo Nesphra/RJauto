@@ -30,7 +30,7 @@
                         <a href="/prices">Learn More</a>
                     </div>
                     <div class="image">
-                        <img class="image" src="src/lib/images/serviceImages/mechanic.jpg" alt="Image 1"/>
+                        <img class="image" src={"/images/serviceImages/mechanic.jpg"} alt="Image 1"/>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                         <a href="/prices">Learn More</a>
                     </div>
                     <div class="image">
-                        <img class="image" src="src/lib/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg" alt="Image 1"/>
+                        <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
                     </div>
                 </div>
             </div>

@@ -20,9 +20,9 @@
         <div class="item2"><p>Call Us: <span style="color: white; font-weight: 200; font-style: normal;">+1 (713) 896-4105</span></p></div>
         <div class="item3"><p>Visit Us <span style="color: #FFFFFF;"><span style="color: white; font-weight: 200; font-style: normal;">13150 FM 529 <span class="disappear">#127, Houston, TX</span></span></span></p></div>
         <div class="socials">
-            <a href="https://www.instagram.com" target="_blank"><img src="src/lib/images/icons/instagram.svg" alt="instagram"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="src/lib/images/icons/facebook.svg" alt="facebook"></a>
-            <a href="https://x.com" target="_blank"><img src="src/lib/images/icons/twitter.svg" alt="twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src={"/images/icons/instagram.svg"} alt="instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src={"/images/icons/facebook.svg"} alt="facebook"></a>
+            <a href="https://x.com" target="_blank"><img src={"/images/icons/twitter.svg"} alt="twitter"></a>
         </div>
     </div>    
 </div>
