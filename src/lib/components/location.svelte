@@ -8,6 +8,7 @@
             <p class="title">We're right here.</p>
             <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, officia, minima expedita ea fuga laudantium ducimus impedit excepturi sunt quas placeat voluptate magnam temporibus eaque ullam iste, doloribus et. Tempora?</p>
         </div>
+        
         <div class="maps-container" id="map">
             <LeafletMap></LeafletMap>
         </div>
@@ -37,7 +38,7 @@
     }
 
     .containerBody{
-        height: clamp(400px, 100vh, 1200px);
+        height: clamp(700px, 100vh, 1200px);
         width: clamp(200px, 80%, 1500px);
         display: flex;
         justify-content: space-around;
@@ -47,9 +48,7 @@
 
     .maps-container{
         width: 50%;
-        height: 60%;
         background-color: black;
-        overflow: hidden;
         border-radius: 15px;
         z-index: 0;
     }
