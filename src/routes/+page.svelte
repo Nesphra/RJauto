@@ -24,7 +24,7 @@
 				<a href="/prices">See our Prices</a>
 			</div>
 		</div>
-		<img src="/images/blueCar.png" alt="blue car" class="carPic" />
+		<img src={"/images/blueCar.png"} alt="blue car" class="carPic" />
 		<div class="frontPageLinks">
 			<li><a href="/#servicesAnchorTag">Services</a></li>
 			<li><a href="/#locationAnchorPoint">Location</a></li>
