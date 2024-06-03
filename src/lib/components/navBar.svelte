@@ -49,14 +49,16 @@
                 <a href="https://www.facebook.com/" target="_blank"><img src={"/images/icons/facebook.svg"} alt="facebook"></a>
                 <a href="https://x.com" target="_blank"><img src={"/images/icons/twitter.svg"} alt="twitter"></a>
             </div>
-            <li><a href="/"><img class="logo" src="#" alt="logo-img"></a></li>
-            <li><a href="/#servicesAnchorTag" on:click={dragBox}>Services</a></li>
-            <hr>
-            <li><a href="/#locationAnchorPoint" on:click={dragBox}>Location</a></li>
-            <hr>
-            <li><a href="/prices" on:click={dragBox}>Pricing</a></li>
-            <hr>
-            <li><a href="/contact" on:click={dragBox}>Contact us</a></li>
+            <div>
+                <li><a href="/"><img class="logo" src="#" alt="logo-img"></a></li>
+                <li><a href="/#servicesAnchorTag" on:click={dragBox}>Services</a></li>
+                <hr>
+                <li><a href="/#locationAnchorPoint" on:click={dragBox}>Location</a></li>
+                <hr>
+                <li><a href="/prices" on:click={dragBox}>Pricing</a></li>
+                <hr>
+                <li><a href="/contact" on:click={dragBox}>Contact us</a></li>
+            </div>
         </div>
     </div>
     <a href="/"><img class="logo" src="#" alt="logo-img"></a>
@@ -115,7 +117,7 @@
     .linkListBox li{
         padding-inline: 20px;
         padding-block: 10px;
-        font-size: 4vw;
+        font-size: clamp(0px, 4vw, 30px);
         text-align: center;
     }
 

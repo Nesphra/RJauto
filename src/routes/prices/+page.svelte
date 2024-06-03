@@ -63,11 +63,19 @@
 </div>
 
 <style>
+    @media screen and (max-width: 800px){
+        .containerBg{
+            display: none;
+        }
+        .headerTitle{
+            color: #4169E1 !important;
+        }
+    }
+
     .containerBg{
         width: 100%;
         height: 100%;
         overflow-x: hidden;
-        background-color: red;
     }
 
     .containerWrapper{
