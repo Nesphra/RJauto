@@ -51,13 +51,13 @@
             </div>
             <div>
                 <li><a href="/"><img class="logo" src="#" alt="logo-img"></a></li>
-                <li><a href="/#servicesAnchorTag" on:click={dragBox}>Services</a></li>
+                <li><a href="/#servicesAnchorTag" on:click={dragBox} on:click={() => open = !open}>Services</a></li>
                 <hr>
-                <li><a href="/#locationAnchorPoint" on:click={dragBox}>Location</a></li>
+                <li><a href="/#locationAnchorPoint" on:click={dragBox} on:click={() => open = !open}>Location</a></li>
                 <hr>
-                <li><a href="/prices" on:click={dragBox}>Pricing</a></li>
+                <li><a href="/prices" on:click={dragBox} on:click={() => open = !open}>Pricing</a></li>
                 <hr>
-                <li><a href="/contact" on:click={dragBox}>Contact us</a></li>
+                <li><a href="/contact" on:click={dragBox} on:click={() => open = !open}>Contact us</a></li>
             </div>
         </div>
     </div>
