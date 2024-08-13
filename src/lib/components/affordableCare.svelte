@@ -1,4 +1,4 @@
-<div class="body">
+<div class="body" id="aboutUsAnchorTag">
     <p class="bodyTitle">Affordable care tailored to your vehicle's needs</p>
     <div class="container">
         <div class="card-b">

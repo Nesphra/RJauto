@@ -13,7 +13,7 @@
 <div class="home">
 	<section class="landingPage">
 		<div class="topBar">
-			<FrontPageTopBar></FrontPageTopBar>
+			<NavBar></NavBar>
 		</div>
 		<div class="wrapperBg">
 			<div class="bg-rect"></div>
@@ -28,14 +28,16 @@
 		</div>
 		<img src={"/images/blueCar.png"} alt="blue car" class="carPic" />
 		<div class="frontPageLinks">
+			<p style="color:white;">On this page:</p>
 			<li><a href="/#servicesAnchorTag">Services</a></li>
+			<li><a href="/#aboutUsAnchorTag">About us</a></li>
 			<li><a href="/#locationAnchorPoint">Location</a></li>
 			<li><a href="/#teamAnchorTag">Meet the Team</a></li>
 		</div>
 	</section>
 </div>
 <Services></Services>
-<NavBar></NavBar>
+<FrontPageTopBar></FrontPageTopBar>
 <AffordableCare></AffordableCare>
 <CarMatters></CarMatters>
 <Location></Location>
@@ -46,9 +48,6 @@
 
 	@media screen and (max-width: 800px) {
 		.frontPageLinks{
-			display: none;
-		}
-		.topBar{
 			display: none;
 		}
 		.landingPage{
@@ -70,6 +69,7 @@
 	/* Front page */
 	.landingPage {
 		height: 580px;
+		margin-top: 100px;
 	}
 
 	.wrapperBg{
@@ -140,7 +140,7 @@
 
 	.frontPageLinks {
 		position: absolute;
-		top: 320px;
+		top: 20%;
 		margin-left: 50px;
 		font-size: 20px;
 	}
@@ -153,7 +153,7 @@
 	.carPic {
 		height: 300px;
 		position: absolute;
-		top: 290px;
+		top: 320px;
 		left: 50%;
 		transform: translate(-50%);
 	}

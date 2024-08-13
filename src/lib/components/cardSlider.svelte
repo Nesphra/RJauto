@@ -1,24 +1,24 @@
 <script>
     import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
-	// import { onMount } from 'svelte';
+    import { browser } from '$app/environment';
+    
+    let paddingVar = '25%';
+    if (browser) {
+        let w = window.innerWidth;
+        if (w < 800){
+            paddingVar = '35%';
+        } else {
+            paddingVar = '25%';
+        }
+        console.log(w, paddingVar)
+    }    
 
-    // onMount(() => {
-    //     document.addEventListener( 'DOMContentLoaded', function () {
-    //         new Splide( '#card-carousel', {
-    //                 perPage    : 2,
-    //                 breakpoints: {
-    //                     640: {
-    //                         perPage: 1,
-    //                     },
-    //                 },
-    //         } ).mount();
-    //     } );
-    // })
+
 </script>
 
 <Splide hasTrack={ false } options={{
     type: 'loop',
-    padding: '25%',
+    padding: paddingVar,
     autoplay: true,
 }}>    
     <SplideTrack>
@@ -26,7 +26,7 @@
             <div class="container">
                 <div class="card">
                     <div class="text">
-                        <h1>Fleet Maintenance</h1>
+                        <h1>Fuel Injection & Throttle Body Cleaning</h1>
                         <a href="/prices">Learn More</a>
                     </div>
                     <div class="image">
@@ -40,6 +40,84 @@
                 <div class="card">
                     <div class="text">
                         <h1>Tire Work</h1>
+                        <a href="/prices">Learn More</a>
+                    </div>
+                    <div class="image">
+                        <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                    </div>
+                </div>
+            </div>
+        </SplideSlide>
+        <SplideSlide>
+            <div class="container">
+                <div class="card">
+                    <div class="text">
+                        <h1>State Inspection</h1>
+                        <a href="/prices">Learn More</a>
+                    </div>
+                    <div class="image">
+                        <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                    </div>
+                </div>
+            </div>
+        </SplideSlide>
+        <SplideSlide>
+            <div class="container">
+                <div class="card">
+                    <div class="text">
+                        <h1>Lube, Oil & Filter</h1>
+                        <a href="/prices">Learn More</a>
+                    </div>
+                    <div class="image">
+                        <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                    </div>
+                </div>
+            </div>
+        </SplideSlide>
+        <SplideSlide>
+            <div class="container">
+                <div class="card">
+                    <div class="text">
+                        <h1>Brake Services</h1>
+                        <a href="/prices">Learn More</a>
+                    </div>
+                    <div class="image">
+                        <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                    </div>
+                </div>
+            </div>
+        </SplideSlide>
+        <SplideSlide>
+            <div class="container">
+                <div class="card">
+                    <div class="text">
+                        <h1>Wheel care</h1>
+                        <a href="/prices">Learn More</a>
+                    </div>
+                    <div class="image">
+                        <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                    </div>
+                </div>
+            </div>
+        </SplideSlide>
+        <SplideSlide>
+            <div class="container">
+                <div class="card">
+                    <div class="text">
+                        <h1>Engine Diagnostics</h1>
+                        <a href="/prices">Learn More</a>
+                    </div>
+                    <div class="image">
+                        <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                    </div>
+                </div>
+            </div>
+        </SplideSlide>
+        <SplideSlide>
+            <div class="container">
+                <div class="card">
+                    <div class="text">
+                        <h1>Radiator Coolant Flush</h1>
                         <a href="/prices">Learn More</a>
                     </div>
                     <div class="image">

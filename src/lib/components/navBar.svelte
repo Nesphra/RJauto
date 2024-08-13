@@ -1,32 +1,7 @@
 <script>
-    import { browser } from '$app/environment';
-    import { onMount } from 'svelte';
 	import Hamburger from 'svelte-hamburger';
 
     let open = false;
-
-    onMount(() => {
-
-        const nav = document.getElementById("navigationBar");
-        let initialOffsetTop;
-
-        if (browser) {
-            initialOffsetTop = nav.getBoundingClientRect().top + window.scrollY;
-
-            window.addEventListener("scroll", function() {
-                var scroll = window.scrollY;
-
-                if (scroll <= initialOffsetTop) {
-                    nav.style.position = "absolute";
-                    nav.style.top = "auto";
-                } else {
-                    nav.style.position = "fixed";
-                    nav.style.top = 0;
-                }
-            });
-        }
-
-    });
 
     function dragBox() {
         const box = document.getElementById("boxID");
@@ -43,29 +18,26 @@
 
 <div class="navBar" id="navigationBar">
     <div class="box" id="boxID">
-        <div class="linkListBox">
+        <div class="linkListBox" style="overflow: hidden;">
             <div class="socialsBox">
                 <a href="https://www.instagram.com" target="_blank"><img src={"/images/icons/instagram.svg"} alt="instagram"></a>
                 <a href="https://www.facebook.com/" target="_blank"><img src={"/images/icons/facebook.svg"} alt="facebook"></a>
                 <a href="https://x.com" target="_blank"><img src={"/images/icons/twitter.svg"} alt="twitter"></a>
             </div>
             <div>
-                <li><a href="/"><img class="logo" src="#" alt="logo-img"></a></li>
-                <li><a href="/#servicesAnchorTag" on:click={dragBox} on:click={() => open = !open}>Services</a></li>
+                <li><a href="/" class="logo"><img src={"images/icons/SVG/logo.svg"} alt="logo-img"></a></li>
+                <li><a href="/prices" on:click={dragBox} on:click={() => open = !open}>Services and pricing</a></li>
                 <hr>
                 <li><a href="/#locationAnchorPoint" on:click={dragBox} on:click={() => open = !open}>Location</a></li>
-                <hr>
-                <li><a href="/prices" on:click={dragBox} on:click={() => open = !open}>Pricing</a></li>
                 <hr>
                 <li><a href="/contact" on:click={dragBox} on:click={() => open = !open}>Contact us</a></li>
             </div>
         </div>
     </div>
-    <a href="/"><img class="logo" src="#" alt="logo-img"></a>
+    <a href="/"><img class="logo" src={"images/icons/SVG/logo.svg"} alt="logo-img"></a>
     <div class="linkList">
-        <li><a href="/#servicesAnchorTag">Services</a></li>
+        <li><a href="/prices">Services and Pricing</a></li>
         <li><a href="/#locationAnchorPoint">Location</a></li>
-        <li><a href="/prices">Pricing</a></li>
         <li><a href="/contact">Contact us</a></li>
     </div>
     <div class="socials">
@@ -117,7 +89,7 @@
     .linkListBox li{
         padding-inline: 20px;
         padding-block: 10px;
-        font-size: clamp(0px, 4vw, 30px);
+        font-size: clamp(0px, 5vw, 30px);
         text-align: center;
     }
 
@@ -129,19 +101,25 @@
         bottom: 0;
     }
 
+    .logo{
+        height: 60px;
+        margin-left: 10px;
+    }
+
     .boorger:hover{
         cursor: pointer;
     }
 
     .navBar{
         display: flex;
-        position: absolute;
+        top:0;
+        position: fixed;
         width: 100%;
-        height: 50px;
+        height: 60px;
         background-color: #4169E1;
         align-items: center;
         gap: 40px;
-        z-index: 1;
+        z-index: 2;
     }
 
     .navBar>*:last-child{
@@ -156,7 +134,7 @@
     }
 
     .linkList a{
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 200;
     }
 
@@ -180,10 +158,6 @@
     .linkList li,
     .linkListBox li{
         list-style: none;
-    }
-
-    .logo{
-        margin-left: 30px;
     }
 
     .socials,

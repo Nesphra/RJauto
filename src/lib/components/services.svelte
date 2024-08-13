@@ -1,7 +1,5 @@
 <script>
 	import CardSlider from "./cardSlider.svelte";
-
-	var iconHeight = "20px"
 </script>
 
 <section class="container" id="servicesAnchorTag">
@@ -13,9 +11,6 @@
 </section>
 
 <style>
-    /* @media screen and (max-width: 800px) {
-        
-    } */
 
     .container{
         margin: auto;

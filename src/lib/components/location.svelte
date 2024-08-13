@@ -6,7 +6,8 @@
     <div class="containerBody">
         <div class="text">
             <p class="title">We're right here.</p>
-            <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, officia, minima expedita ea fuga laudantium ducimus impedit excepturi sunt quas placeat voluptate magnam temporibus eaque ullam iste, doloribus et. Tempora?</p>
+            <p class="body">We are located at <a href="https://www.google.com/maps/place/Tires+Express+%26+More/@29.88077,-95.6100165,244m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8640d0f371900001:0x2082a656ec816941!8m2!3d29.88077!4d-95.6087988!16s%2Fg%2F11ggm4g7s5?entry=ttu" target="_blank"><span style="color: #4169E1; font-weight: 300; text-decoration: underline;">13150 FM 529 #127, Houston, TX</span></a>. We are easily accessible and ready to service. We'd love to chat with you about your car!</p>
+            <p class="body">Business hours: <span style="font-weight: 400;">Monday-Friday 8am-5pm</span>, closed on week-ends and holidays</p>
         </div>
         
         <div class="maps-container" id="map">
@@ -65,7 +66,7 @@
         margin: 0;
     }
 
-    .text>*:last-child{
+    .body{
         font-size: 18px;
         font-weight: 200;
     }

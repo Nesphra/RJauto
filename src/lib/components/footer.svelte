@@ -1,5 +1,5 @@
 <div class="footer">
-    <img alt="Logo-img" src="#">
+    <img src={"/images/icons/SVG/logo.svg"} alt="Logo-img" width="70px">
     <hr>
     <ul>
         <a href="https://www.instagram.com" target="_blank"><img src={"/images/icons/instagram.svg"} alt="instagram"></a>
@@ -16,7 +16,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-block: 100px;
+        padding-block: 70px;
     }
 
     hr {
