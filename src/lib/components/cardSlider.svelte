@@ -12,8 +12,6 @@
         }
         console.log(w, paddingVar)
     }    
-
-
 </script>
 
 <Splide hasTrack={ false } options={{

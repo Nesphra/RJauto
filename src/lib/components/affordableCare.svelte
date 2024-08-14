@@ -4,25 +4,35 @@
         <div class="card-b">
             <div class="textbox">
                 <p>An <span style="color:#87CEEB">affordable</span> price</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni explicabo quisquam doloremque tempora deleniti incidunt tempore facilis quasi. Facilis perspiciatis iusto dolore, non repellat deserunt velit ducimus sit placeat.</p>    
+                <p>We offer competitive pricing on tires and batteries because we believe you 
+                    deserve the best without breaking the bank. With years of experience, 
+                    we've honed our ability to provide top-quality products at prices that 
+                    suit your budget. Prices vary depending on size and application.
+                </p>    
             </div>
         </div>
         <div class="card-w">
             <div class="textbox">
-                <p>Out-of-this-world <span style="color:#4169E1">quality</span></p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ratione tenetur sit cupiditate, optio saepe unde architecto quisquam illum hic earum natus iure commodi perspiciatis dolores numquam! Cumque, temporibus sit!</p>
+                <p><span style="color:#4169E1">Speed</span> and <span style="color:#4169E1">quality</span></p>
+                <p>We pride ourselves on quick service, same-day in most cases, warrantied and done right the
+                    first time. We understand that your time is valuable, and any company vehicle
+                    that is not on the road making you money is costing you money.</p>
             </div>
         </div>
         <div class="card-w card-3">
             <div class="textbox">
                 <p><span style="color:#4169E1">Every</span> type of service</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nam distinctio eius. Id consectetur sit atque maxime, nemo neque reprehenderit minus, soluta quod sapiente, aliquid eos nisi quibusdam necessitatibus dicta officia dolor impedit repellendus nihil.</p>
+                <p>We are a full service auto repair shop that offers everything from oil changes,
+                    brakes, alignments and more. We have 16 years of experience in servicing
+                    commercial fleet vehicles, and accept all fleet management companies.</p>
             </div>
         </div>
         <div class="card-b card-4">
             <div class="textbox">
                 <p>A <span style="color:#87CEEB">family</span> of Engineers</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, cupiditate architecto. Deleniti officia voluptatum nam fugit dolores nisi vero dignissimos nemo, architecto possimus id quaerat iure corrupti nostrum harum vel! Dolores, facilis voluptatem!</p>
+                <p>At RJ's Automotive Center, we're more than just a team — we're a family of engineers dedicated to 
+                    treating your vehicle with the same meticulous care and expertise as we would our own.
+                </p>
             </div>
         </div>
     </div>

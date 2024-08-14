@@ -1,8 +1,24 @@
 <div class="container">
-    <div class="img-container"><img class="image" src={"/images/place/place1.png"} alt="handsome mechanic"></div>
     <div class="text">
-        <p class="title">Every repair <span style="color:#87CEEB">matters</span> to us.</p>
-        <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, officia, minima expedita ea fuga laudantium ducimus impedit excepturi sunt quas placeat voluptate magnam temporibus eaque ullam iste, doloribus et. Tempora?</p>
+        <p class="title">Fleet <span style="color:#87CEEB">Benefits</span></p>
+        <div class="body">
+            <p class="body-left">
+                <li>Pickup and delivery services available</li>
+                <li>Appointments</li>
+                <li>Priority Service</li>
+                <li>Competitive pricing</li>
+                <li>Discounted labor rates</li>
+                <li>Skilled Technicians and state of the art equipment</li>
+            </p>
+            <p class="body-right">
+                <li>12 month/12,000 mile warranty minimum</li>
+                <li>Lifetime warranty on some parts</li>
+                <li>Extended warranties accepted</li>
+                <li>Completely digitized repair records for easy access</li>
+                <li>All fleet management services accepted</li>
+                <li>Work with fleet management providers</li>
+            </p>
+        </div>
         <a href="/contact">Contact us</a>
     </div>
 </div>
@@ -10,67 +26,56 @@
 <style>
 
     @media screen and (max-width: 950px) {
-        .container{
-            flex-direction: column;
-            padding-inline: 10px !important;
-        }
-        .text{
-            text-align: center;
-            width: 100% !important;
-            align-items: center;
-        }
-        .img-container{
-            display: none;
-            margin-bottom: 50px;
+        .body{
+            flex-direction: column !important;
         }
     }
 
     .container{
-        background-color: #363636;
-        padding: 30px;
+        background-image: url("/images/place/place1.png");
+        background-size: cover;
+        height: fit-content;
+        padding-block: 50px;
+        padding-inline: 20px;
         display: flex;
-        padding-inline: 100px;
-        justify-content: space-around;
         align-items: center;
-        column-gap: 80px;
-    }
-
-    .img-container{
-        width: 80%;
-        display: flex;
         justify-content: center;
-        align-items: center;
-    }
-
-    .image{
-        max-width: 500px;
-        width: 100%;
-        height: 100%;
-        border-radius: 30px;
-        object-fit: cover;
     }
 
     .text{
-        width: 100%;
+        color: #EFF0F6;
+        width: clamp(0, 80%, 1000px);
+        background-color: rgba(0, 0, 0, 0.386);
         display: flex;
         flex-direction: column;
         justify-content: center;
-        color: #EFF0F6;
+        -webkit-backdrop-filter: blur(15px); 
+        backdrop-filter: blur(15px);
+        text-align: center;
+        padding: 50px;
+        border-radius: 15px;
     }
 
-    .text>*:first-child{
+    .title{
         font-size: 28px;
         margin: 0;
     }
 
-    .text>*:nth-child(2){
+    .body-right, .body-left{
         font-size: 18px;
-        font-weight: 200;
+        font-weight: 400;
+        text-align: left;
+        width: 100%;
+    }
+
+    .body{
+        display: flex;
+        justify-content: space-around;
+        column-gap: 30px;
     }
 
     .text>*:last-child{
         padding: 15px;
-        width:min-content;
         white-space: nowrap;
         border-radius: 6px;
         background-color: #18A0FB;

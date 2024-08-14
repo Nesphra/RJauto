@@ -79,7 +79,7 @@
             display: none;
         }
         .headerTitle{
-            color: #4169E1 !important;
+            color: black !important;
         }
     }
 
