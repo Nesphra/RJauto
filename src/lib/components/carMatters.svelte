@@ -66,6 +66,8 @@
         font-weight: 400;
         text-align: left;
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .body{
