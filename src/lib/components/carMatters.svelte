@@ -2,22 +2,22 @@
     <div class="text">
         <p class="title">Fleet <span style="color:#87CEEB">Benefits</span></p>
         <div class="body">
-            <p class="body-left">
+            <div class="body-left">
                 <li>Pickup and delivery services available</li>
                 <li>Appointments</li>
                 <li>Priority Service</li>
                 <li>Competitive pricing</li>
                 <li>Discounted labor rates</li>
                 <li>Skilled Technicians and state of the art equipment</li>
-            </p>
-            <p class="body-right">
+            </div>
+            <div class="body-right">
                 <li>12 month/12,000 mile warranty minimum</li>
                 <li>Lifetime warranty on some parts</li>
                 <li>Extended warranties accepted</li>
                 <li> digitized repair records for easy access</li>
                 <li>All fleet management services accepted</li>
                 <li>Work with fleet management providers</li>
-            </p>
+            </div>
         </div>
         <a href="/contact">Contact us</a>
     </div>
