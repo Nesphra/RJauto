@@ -31,6 +31,17 @@
         }
     }
 
+    @media screen and (max-width: 600px) {
+        .text{
+            list-style: none;
+            padding-block: 10px !important;
+        }
+
+        .body-left, .body-right{
+            text-align: center !important;
+        }
+    }
+
     .container{
         background-image: url("/images/place/place1.png");
         background-size: cover;
@@ -58,15 +69,18 @@
     .title{
         font-size: 28px;
         margin: 0;
+        margin-bottom: 30px;
+        
     }
 
     .body-right, .body-left{
-        font-size: 18px;
+        font-size: clamp(10px, 4vw, 18px);
         display: flex;
         flex-direction: column;
-        font-weight: 400;
+        font-weight: 300;
         text-align: left;
         width: 100%;
+        line-height: 35px;
     }
 
     .body{
