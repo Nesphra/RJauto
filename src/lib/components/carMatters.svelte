@@ -14,7 +14,7 @@
                 <li>12 month/12,000 mile warranty minimum</li>
                 <li>Lifetime warranty on some parts</li>
                 <li>Extended warranties accepted</li>
-                <li>Completely digitized repair records for easy access</li>
+                <li> digitized repair records for easy access</li>
                 <li>All fleet management services accepted</li>
                 <li>Work with fleet management providers</li>
             </p>
@@ -37,21 +37,20 @@
         height: fit-content;
         padding-block: 50px;
         padding-inline: 20px;
-        display: flex;
+        /* display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; */
     }
 
     .text{
         color: #EFF0F6;
-        width: clamp(0, 80%, 1000px);
         background-color: rgba(0, 0, 0, 0.386);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* text-align: center; */
         -webkit-backdrop-filter: blur(15px); 
         backdrop-filter: blur(15px);
-        text-align: center;
         padding: 50px;
         border-radius: 15px;
     }
@@ -61,19 +60,29 @@
         margin: 0;
     }
 
-    .body-right, .body-left{
+    .body-right{
+        display: flex;
+        flex-direction: column;
         font-size: 18px;
         font-weight: 400;
         text-align: left;
         width: 100%;
+    }
+
+    .body-left{
         display: flex;
         flex-direction: column;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        width: 100%;
     }
 
     .body{
         display: flex;
         justify-content: space-around;
         column-gap: 30px;
+        flex-direction: row;
     }
 
     .text>*:last-child{
