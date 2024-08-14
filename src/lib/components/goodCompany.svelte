@@ -4,23 +4,11 @@
     <div class="pictures">
         <div class="imageText">
             <div class="img-container"><img></div>
-            <p>Jeff Nippard</p>
+            <p>Russell Fuller</p>
         </div>
         <div class="imageText">
             <div class="img-container"><img></div>
-            <p>Jeff Nippard</p>
-        </div>
-        <div class="imageText">
-            <div class="img-container"><img></div>
-            <p>Jeff Nippard</p>
-        </div>
-        <div class="imageText">
-            <div class="img-container"><img></div>
-            <p>Jeff Nippard</p>
-        </div>
-        <div class="imageText">
-            <div class="img-container"><img></div>
-            <p>Jeff Nippard</p>
+            <p>Jacob Herrera</p>
         </div>
     </div>
 </div>

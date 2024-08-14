@@ -14,7 +14,7 @@
                 <li>12 month/12,000 mile warranty minimum</li>
                 <li>Lifetime warranty on some parts</li>
                 <li>Extended warranties accepted</li>
-                <li> digitized repair records for easy access</li>
+                <li>Completely digitized repair records for easy access</li>
                 <li>All fleet management services accepted</li>
                 <li>Work with fleet management providers</li>
             </div>

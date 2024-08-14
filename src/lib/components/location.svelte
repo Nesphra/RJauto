@@ -20,10 +20,12 @@
     @media screen and (max-width: 950px) {
         .containerBody{
             flex-direction: column;
-            padding-inline: 10px !important;
+            justify-content: center !important;
         }
         .maps-container{
             width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
         }
         .text{
             width: 100% !important;
