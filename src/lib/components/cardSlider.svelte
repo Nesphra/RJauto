@@ -5,7 +5,7 @@
     let paddingVar = '25%';
     if (browser) {
         let w = window.innerWidth;
-        if (w < 800){
+        if (w < 600){
             paddingVar = '35%';
         } else {
             paddingVar = '25%';
