@@ -8,13 +8,13 @@
         const leaflet = await import('leaflet');
 
         var newIcon = leaflet.icon({
-            iconUrl: 'images/blueCar.png',
-            shadowUrl: 'images/blueCar.png',
+            iconUrl: 'images/marker-icon_copy.png',
+            shadowUrl: 'images/marker-shadow_copy.png',
 
-            iconSize:     [38, 95], // size of the icon
-            shadowSize:   [50, 64], // size of the shadow
-            iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-            shadowAnchor: [4, 62],  // the same for the shadow
+            iconSize:     [20, 35], // size of the icon
+            shadowSize:   [20, 35], // size of the shadow
+            iconAnchor:   [10, 40], // point of the icon which will correspond to marker's location
+            shadowAnchor: [6, 40],  // the same for the shadow
             popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 
         })
@@ -28,8 +28,6 @@
         }).addTo(map);
 
         leaflet.marker([29.8807, -95.6089], {icon: newIcon}).addTo(map)
-            .bindPopup("Come say hi!")
-            .openPopup();
     });
 
     onDestroy(async () => {
