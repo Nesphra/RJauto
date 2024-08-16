@@ -7,7 +7,7 @@
     onMount(async () => {
         const leaflet = await import('leaflet');
 
-        var icon = leaflet.icon({
+        var newIcon = leaflet.icon({
             iconUrl: 'images/marker-icon_copy.png',
             shadowUrl: 'images/marker-shadow_copy.png',
 
@@ -19,7 +19,7 @@
 
         })
 
-        console.log(icon)
+        console.log(newIcon)
 
         map = leaflet.map(mapElement).setView([29.880310, -95.609820], 17);
 
