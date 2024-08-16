@@ -8,8 +8,8 @@
         const leaflet = await import('leaflet');
 
         var icon = leaflet.icon({
-            iconUrl: 'static/marker-icon_copy.png',
-            shadowUrl: 'static/marker-shadow_copy.png',
+            iconUrl: 'images/marker-icon_copy.png',
+            shadowUrl: 'images/marker-shadow_copy.png',
 
             iconSize:     [38, 95], // size of the icon
             shadowSize:   [50, 64], // size of the shadow
