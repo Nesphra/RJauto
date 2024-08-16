@@ -37,7 +37,7 @@
     <a href="/"><img class="logo" src={"images/icons/SVG/logo.svg"} alt="logo-img"></a>
     <div class="linkList">
         <li><a href="/prices">Services and Pricing</a></li>
-        <li><a href="/#locationAnchorPoint">Location</a></li>
+        <li><a href="/#locationAnchorPoint">Location TEST</a></li>
         <li><a href="/contact">Contact us</a></li>
     </div>
     <div class="socials">
