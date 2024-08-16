@@ -6,7 +6,7 @@
         <a href="https://www.facebook.com/" target="_blank"><img src={"/images/icons/facebook.svg"} alt="facebook"></a>
         <a href="https://x.com" target="_blank"><img src={"/images/icons/twitter.svg"} alt="twitter"></a>
     </ul>
-    <p>© RJ’s Automobile Center, Inc. 2024. THIS IS A DEBUG</p>
+    <p>© RJ’s Automobile Center, Inc. 2024.</p>
 </div>
 
 <style>

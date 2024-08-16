@@ -35,11 +35,20 @@
         .text{
             list-style: none;
             padding-block: 10px !important;
+            border-radius: 0 !important;
         }
 
         .body-left, .body-right{
             text-align: center !important;
         }
+
+        .container{
+            padding: 0 !important;
+        }
+    }
+
+    li{
+        margin-block: 8px;
     }
 
     .container{
@@ -80,7 +89,7 @@
         font-weight: 300;
         text-align: left;
         width: 100%;
-        line-height: 35px;
+        line-height: 25px;
     }
 
     .body{

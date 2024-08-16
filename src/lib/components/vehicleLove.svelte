@@ -11,6 +11,10 @@
         }
     }
 
+    p{
+        width: 80%;
+    }
+
     .wrapper{
         display: flex;
         align-items: center;
