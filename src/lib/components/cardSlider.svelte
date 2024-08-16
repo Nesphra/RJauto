@@ -126,6 +126,10 @@
         .image{
             display: none !important;
         }
+
+        .thisIsClass{
+            width: 100vw !important;
+        }
     }
 
     h1{
