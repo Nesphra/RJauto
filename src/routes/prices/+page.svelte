@@ -83,6 +83,10 @@
         }
     }
 
+    .gridItem:hover{
+        transform: scale(1.1);
+    }
+
     .containerBg{
         width: 100%;
         height: 100%;
@@ -147,6 +151,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        transition: 0.2s;
     }
 
     .cardTitle {

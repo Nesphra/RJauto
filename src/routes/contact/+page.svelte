@@ -5,6 +5,7 @@
 </script>
 
 <NavBar></NavBar>
+<div class="bg-rect"></div>
 <div class="wrapper">
     <p class="mainTitle">Contact form</p>
     <div class="card">
@@ -23,9 +24,9 @@
                 <p class="title">Our information</p>
                 <hr>
                 <p>We're open for any suggestion or just to have a chat.</p>
-                <ul>
-                    <p>Address: 13150 FM 529 #127, Houston, TX</p>
-                    <p>Phone: +1 (713) 896-4105</p>
+                <ul class="list">
+                    <li>Address: 13150 FM 529 #127, Houston, TX</li>
+                    <li>Phone: +1 (713) 896-4105</li>
                 </ul>
             </div>
         </div>
@@ -54,6 +55,11 @@
         }
     }
 
+    .list > li{
+        line-height: normal;
+        margin-block: 25px;
+    }
+
     .info-info{
         width: 80%;
     }
@@ -62,7 +68,16 @@
         width: 50px;
         margin: 10px 0 0 0;
     }
-    
+
+    .bg-rect {
+		width: 110%;
+		height: 1000px;
+		background-color: #363636;
+		border-radius: 200px;
+		position: absolute;
+		transform: translate(-8%, -60%) rotate(-9.3deg);
+		z-index: -1;
+	}
     .info{
         display: flex;
         align-items: center;
