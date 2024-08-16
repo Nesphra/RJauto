@@ -8,8 +8,8 @@
         const leaflet = await import('leaflet');
 
         var newIcon = leaflet.icon({
-            iconUrl: 'images/marker-icon_copy.png',
-            shadowUrl: 'images/marker-shadow_copy.png',
+            iconUrl: 'images/blueCar.png',
+            shadowUrl: 'images/blueCar.png',
 
             iconSize:     [38, 95], // size of the icon
             shadowSize:   [50, 64], // size of the shadow
@@ -27,7 +27,7 @@
             attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        leaflet.marker([29.8807, -95.6089]).addTo(map)
+        leaflet.marker([29.8807, -95.6089], {icon: newIcon}).addTo(map)
             .bindPopup("Come say hi!")
             .openPopup();
     });
