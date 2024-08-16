@@ -11,10 +11,10 @@
             iconUrl: 'images/marker-icon_copy.png',
             shadowUrl: 'images/marker-shadow_copy.png',
 
-            iconSize:     [20, 35], // size of the icon
-            shadowSize:   [20, 35], // size of the shadow
-            iconAnchor:   [10, 40], // point of the icon which will correspond to marker's location
-            shadowAnchor: [6, 40],  // the same for the shadow
+            iconSize:     [25, 40], // size of the icon
+            shadowSize:   [25, 40], // size of the shadow
+            iconAnchor:   [13, 45], // point of the icon which will correspond to marker's location
+            shadowAnchor: [8, 45],  // the same for the shadow
             popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 
         })

@@ -1,137 +1,140 @@
 <script>
     import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
-    import { browser } from '$app/environment';
     
-    let paddingVar = '25%';
-    if (browser) {
-        let w = window.innerWidth;
-        if (w < 600){
-            paddingVar = '40%';
-        } else {
-            paddingVar = '25%';
-        }
-        console.log(w, paddingVar)
-    }    
 </script>
 
-<Splide hasTrack={ false } options={{
-    type: 'loop',
-    padding: paddingVar,
-    autoplay: true,
-}}>    
-    <SplideTrack>
-        <SplideSlide>
-            <div class="container">
-                <div class="card">
-                    <div class="text">
-                        <h1>Fuel Injection & Throttle Body Cleaning</h1>
-                        <a href="/prices">Learn More</a>
-                    </div>
-                    <div class="image">
-                        <img class="image" src={"/images/serviceImages/mechanic.jpg"} alt="Image 1"/>
-                    </div>
-                </div>
-            </div>
-        </SplideSlide>
-        <SplideSlide>
-            <div class="container">
-                <div class="card">
-                    <div class="text">
-                        <h1>Tire Work</h1>
-                        <a href="/prices">Learn More</a>
-                    </div>
-                    <div class="image">
-                        <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+<div class="thisIsClass">
+    <Splide hasTrack={ false } options={{
+        type: 'loop',
+        autoplay: true,
+        focus: 'center',
+        // padding: '18vw',
+    }}>    
+        <SplideTrack>
+            <SplideSlide>
+                <div class="container">
+                    <div class="card">
+                        <div class="text">
+                            <h1>Fuel Injection & Throttle Body Cleaning</h1>
+                            <a href="/prices">Learn More</a>
+                        </div>
+                        <div class="image">
+                            <img class="image" src={"/images/serviceImages/mechanic.jpg"} alt="Image 1"/>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </SplideSlide>
-        <SplideSlide>
-            <div class="container">
-                <div class="card">
-                    <div class="text">
-                        <h1>State Inspection</h1>
-                        <a href="/prices">Learn More</a>
-                    </div>
-                    <div class="image">
-                        <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
-                    </div>
-                </div>
-            </div>
-        </SplideSlide>
-        <SplideSlide>
-            <div class="container">
-                <div class="card">
-                    <div class="text">
-                        <h1>Lube, Oil & Filter</h1>
-                        <a href="/prices">Learn More</a>
-                    </div>
-                    <div class="image">
-                        <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+            </SplideSlide>
+            <SplideSlide>
+                <div class="container">
+                    <div class="card">
+                        <div class="text">
+                            <h1>Tire Work</h1>
+                            <a href="/prices">Learn More</a>
+                        </div>
+                        <div class="image">
+                            <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </SplideSlide>
-        <SplideSlide>
-            <div class="container">
-                <div class="card">
-                    <div class="text">
-                        <h1>Brake Services</h1>
-                        <a href="/prices">Learn More</a>
-                    </div>
-                    <div class="image">
-                        <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
-                    </div>
-                </div>
-            </div>
-        </SplideSlide>
-        <SplideSlide>
-            <div class="container">
-                <div class="card">
-                    <div class="text">
-                        <h1>Wheel care</h1>
-                        <a href="/prices">Learn More</a>
-                    </div>
-                    <div class="image">
-                        <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+            </SplideSlide>
+            <SplideSlide>
+                <div class="container">
+                    <div class="card">
+                        <div class="text">
+                            <h1>State Inspection</h1>
+                            <a href="/prices">Learn More</a>
+                        </div>
+                        <div class="image">
+                            <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </SplideSlide>
-        <SplideSlide>
-            <div class="container">
-                <div class="card">
-                    <div class="text">
-                        <h1>Engine Diagnostics</h1>
-                        <a href="/prices">Learn More</a>
-                    </div>
-                    <div class="image">
-                        <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
-                    </div>
-                </div>
-            </div>
-        </SplideSlide>
-        <SplideSlide>
-            <div class="container">
-                <div class="card">
-                    <div class="text">
-                        <h1>Radiator Coolant Flush</h1>
-                        <a href="/prices">Learn More</a>
-                    </div>
-                    <div class="image">
-                        <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+            </SplideSlide>
+            <SplideSlide>
+                <div class="container">
+                    <div class="card">
+                        <div class="text">
+                            <h1>Lube, Oil & Filter</h1>
+                            <a href="/prices">Learn More</a>
+                        </div>
+                        <div class="image">
+                            <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </SplideSlide>
-    </SplideTrack>
-</Splide>
+            </SplideSlide>
+            <SplideSlide>
+                <div class="container">
+                    <div class="card">
+                        <div class="text">
+                            <h1>Brake Services</h1>
+                            <a href="/prices">Learn More</a>
+                        </div>
+                        <div class="image">
+                            <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                        </div>
+                    </div>
+                </div>
+            </SplideSlide>
+            <SplideSlide>
+                <div class="container">
+                    <div class="card">
+                        <div class="text">
+                            <h1>Wheel care</h1>
+                            <a href="/prices">Learn More</a>
+                        </div>
+                        <div class="image">
+                            <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                        </div>
+                    </div>
+                </div>
+            </SplideSlide>
+            <SplideSlide>
+                <div class="container">
+                    <div class="card">
+                        <div class="text">
+                            <h1>Engine Diagnostics</h1>
+                            <a href="/prices">Learn More</a>
+                        </div>
+                        <div class="image">
+                            <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                        </div>
+                    </div>
+                </div>
+            </SplideSlide>
+            <SplideSlide>
+                <div class="container">
+                    <div class="card">
+                        <div class="text">
+                            <h1>Radiator Coolant Flush</h1>
+                            <a href="/prices">Learn More</a>
+                        </div>
+                        <div class="image">
+                            <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                        </div>
+                    </div>
+                </div>
+            </SplideSlide>
+        </SplideTrack>
+    </Splide>
+</div>
 
 <style>
     @import '@splidejs/svelte-splide/css/sea-green';
 
-    @media screen and (max-width: 600px){
-        
+    @media screen and (max-width: 800px){
+        .image{
+            display: none !important;
+        }
+    }
+
+    h1{
+        width: 80%;
+    }
+
+    .thisIsClass{
+        width: 80vw;
+        max-width: 900px;
     }
 
     .container{
@@ -143,7 +146,7 @@
     }
 
     .card{
-        width: 80%;
+        width: 90%;
         background-color: #363636;
         height: 100%;
         border-radius: 15px;
