@@ -21,13 +21,13 @@
 
         console.log(newIcon)
 
-        map = leaflet.map(mapElement).setView([29.880310, -95.609820], 17);
+        map = leaflet.map(mapElement).setView([29.866890, -95.573620], 17);
 
         leaflet.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        leaflet.marker([29.8807, -95.6089], {icon: newIcon}).addTo(map)
+        leaflet.marker([29.8668, -95.5736], {icon: newIcon}).addTo(map)
     });
 
     onDestroy(async () => {

@@ -25,7 +25,7 @@
                 <hr>
                 <p>We're open for any suggestion or just to have a chat.</p>
                 <ul class="list">
-                    <li>Address: 13150 FM 529 #127, Houston, TX</li>
+                    <li>Address: 11131 W Little York, Houston, TX</li>
                     <li>Phone: +1 (713) 896-4105</li>
                 </ul>
             </div>

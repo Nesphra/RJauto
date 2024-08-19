@@ -1,11 +1,6 @@
 <div class="footer">
     <img src={"/images/icons/SVG/logo.svg"} alt="Logo-img" width="70px">
     <hr>
-    <ul>
-        <a href="https://www.instagram.com" target="_blank"><img src={"/images/icons/instagram.svg"} alt="instagram"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src={"/images/icons/facebook.svg"} alt="facebook"></a>
-        <a href="https://x.com" target="_blank"><img src={"/images/icons/twitter.svg"} alt="twitter"></a>
-    </ul>
     <p>© RJ’s Automobile Center, Inc. 2024.</p>
 </div>
 

@@ -16,34 +16,26 @@
     };
 </script>
 
-<div class="navBar" id="navigationBar">
-    <div class="box" id="boxID">
-        <div class="linkListBox" style="overflow: hidden;">
-            <div class="socialsBox">
-                <a href="https://www.instagram.com" target="_blank"><img src={"/images/icons/instagram.svg"} alt="instagram"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img src={"/images/icons/facebook.svg"} alt="facebook"></a>
-                <a href="https://x.com" target="_blank"><img src={"/images/icons/twitter.svg"} alt="twitter"></a>
-            </div>
-            <div>
-                <li><a href="/" class="logo"><img src={"images/icons/SVG/logo.svg"} alt="logo-img"></a></li>
-                <li><a href="/prices" on:click={dragBox} on:click={() => open = !open}>Services and pricing</a></li>
-                <hr>
-                <li><a href="/#locationAnchorPoint" on:click={dragBox} on:click={() => open = !open}>Location</a></li>
-                <hr>
-                <li><a href="/contact" on:click={dragBox} on:click={() => open = !open}>Contact us</a></li>
-            </div>
+<div class="box" id="boxID">
+    <div class="linkListBox" style="overflow: hidden;">
+        <div>
+            <li><a href="/" class="logo"><img src={"images/icons/SVG/logo.svg"} alt="logo-img"></a></li>
+            <li><a href="/prices" on:click={dragBox} on:click={() => open = !open}>Services and pricing</a></li>
+            <hr>
+            <li><a href="/#locationAnchorPoint" on:click={dragBox} on:click={() => open = !open}>Location</a></li>
+            <hr>
+            <li><a href="/contact" on:click={dragBox} on:click={() => open = !open}>Contact us</a></li>
         </div>
     </div>
-    <a href="/"><img class="logo" src={"images/icons/SVG/logo.svg"} alt="logo-img"></a>
-    <div class="linkList">
-        <li><a href="/prices">Services and Pricing</a></li>
-        <li><a href="/#locationAnchorPoint">Location TEST</a></li>
-        <li><a href="/contact">Contact us</a></li>
-    </div>
-    <div class="socials">
-        <a href="https://www.instagram.com" target="_blank"><img src={"/images/icons/instagram.svg"} alt="instagram"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src={"/images/icons/facebook.svg"} alt="facebook"></a>
-        <a href="https://x.com" target="_blank"><img src={"/images/icons/twitter.svg"} alt="twitter"></a>
+</div>
+<div class="navBar" id="navigationBar">
+    <div class="containerBox">
+        <a href="/"><img class="logo" src={"images/icons/SVG/logo.svg"} alt="logo-img"></a>
+        <div class="linkList">
+            <li><a href="/prices">Services and Pricing</a></li>
+            <li><a href="/#locationAnchorPoint">Location</a></li>
+            <li><a href="/contact">Contact us</a></li>
+        </div>
     </div>
     <a href={void(0)} on:click={dragBox} class="boorger"><Hamburger {open} on:click={() => open = !open} /></a>
 </div>
@@ -53,12 +45,12 @@
         .linkList {
             display: none !important;
         }
-        .socials{
-            display: none !important;
-        }
         .navBar{
             position: fixed !important;
             top: 0 !important;
+        }
+        .containerBox {
+            padding-inline: 0 !important;
         }
     }
 
@@ -68,8 +60,17 @@
         }
     }
 
+    .containerBox{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 1300px;
+    }
+
     hr{
-        width: 100%;
+        width: 60%;
     }
 
     .box{
@@ -84,6 +85,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        z-index: 3;
     }
 
     .linkListBox li{
@@ -95,10 +97,6 @@
 
     .linkListBox {
         margin-top: 30px;
-    }
-
-    .socialsBox{
-        bottom: 0;
     }
 
     .logo{
@@ -119,6 +117,7 @@
         height: 60px;
         background-color: #4169E1;
         align-items: center;
+        justify-content: center;
         gap: 40px;
         z-index: 2;
     }
@@ -159,17 +158,6 @@
     .linkList li,
     .linkListBox li{
         list-style: none;
-    }
-
-    .socials,
-    .socialsBox{
-        display: flex;
-        column-gap: 10px;
-        align-items: center;
-        justify-content: center;
-        width: 100px;
-        position: absolute;
-        right: 30px;
     }
 
     img{
