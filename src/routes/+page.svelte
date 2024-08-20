@@ -141,8 +141,9 @@
 	.frontPageLinks {
 		position: absolute;
 		top: 20%;
-		margin-left: 50px;
 		font-size: 20px;
+		/* background-color: red; */
+		left: 15%;
 	}
 
 	.frontPageLinks > li::marker {

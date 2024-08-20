@@ -1,6 +1,8 @@
 <div class="wrapper">
-    <p>Give your vehicle the love it deserves.</p>
-    <a href="/contact">Get in contact</a>
+    <div class="insideWrap">
+        <p>Give your vehicle the love it deserves.</p>
+        <a href="/contact">Get in contact</a>
+    </div>
 </div>
 
 <style>
@@ -16,30 +18,39 @@
     }
 
     .wrapper{
+        background-color: #363636;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        padding: 100px;
-        background-color: #363636;
-        color: #EFF0F6;
+        justify-content: center;
     }
 
-    .wrapper>*:first-child{
+    .insideWrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        padding: 30px;
+        height: 300px;
+    }
+
+    .insideWrap>*:first-child{
         font-weight: 200;
         font-size: 36px;
         text-align: center;
+        color: white;
     }
 
-    .wrapper>*:last-child{
+    .insideWrap>*:last-child{
         padding: 15px;
+        background-color: #18A0FB;
         width:min-content;
         white-space: nowrap;
         border-radius: 6px;
-        background-color: #18A0FB;
         color: #EFF0F6;
     }
 
-    .wrapper>*:last-child:hover{
+    .insideWrap>*:last-child:hover{
         color: #363636;
         background-color: #EFF0F6;
     }
