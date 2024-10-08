@@ -1,4 +1,4 @@
-import { GOOGLE_EMAIL , GOOGLE_EMAIL_TO, GOOGLE_EMAIL_BCC} from "$env/static/private";
+import { GOOGLE_EMAIL , GOOGLE_EMAIL_TO} from "$env/static/private";
 import transporter from "$lib/emailSetup.server.js";
 
 export const actions = {
