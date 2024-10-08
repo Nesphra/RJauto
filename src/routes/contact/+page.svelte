@@ -11,7 +11,7 @@
     <div class="card">
         <div class="form" >
             <form method="POST" class="container">
-                <p class="title">Email us</p>
+                <p class="title">Email us!</p>
                 <input class="input" name="to" type="email" value="" placeholder="Email" autocomplete="off"/>
                 <input class="input" name="subject" type="text" value="" placeholder="Subject" autocomplete="off"/>
                 <textarea class="input" name="body" rows="6" value="" placeholder="Request" autocomplete="off"/>
