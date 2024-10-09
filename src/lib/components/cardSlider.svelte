@@ -45,7 +45,7 @@
                             <a href="/prices">Learn More</a>
                         </div>
                         <div class="image">
-                            <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                            <img class="image" src={"/images/serviceImages/handsome-technician-working-car-workshop_23-2147897934.jpg"} alt="Image 1"/>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                             <a href="/prices">Learn More</a>
                         </div>
                         <div class="image">
-                            <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                            <img class="image" src={"/images/serviceImages/male-mechanics-working-together-car-shop_23-2150376966.jpg"} alt="Image 1"/>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                             <a href="/prices">Learn More</a>
                         </div>
                         <div class="image">
-                            <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                            <img class="image" src={"/images/serviceImages/mechanic.jpg"} alt="Image 1"/>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                             <a href="/prices">Learn More</a>
                         </div>
                         <div class="image">
-                            <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                            <img class="image" src={"/images/serviceImages/mechanic.jpg"} alt="Image 1"/>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                             <a href="/prices">Learn More</a>
                         </div>
                         <div class="image">
-                            <img class="image" src={"/images/serviceImages/top-view-woman-repairing-car_23-2150171260.jpg"} alt="Image 1"/>
+                            <img class="image" src={"/images/serviceImages/male-mechanics-working-together-car-shop_23-2150376966.jpg"} alt="Image 1"/>
                         </div>
                     </div>
                 </div>
