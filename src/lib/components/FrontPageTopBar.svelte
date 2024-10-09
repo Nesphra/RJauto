@@ -18,8 +18,8 @@
 <div class=topLineContainer>
     <div class = "topLine">
         <div class="item1"><p>WE ARE <span style="color: {color};">{StoreOpen}</span> <span class="disappear" style="color: white; font-weight: 200; font-style: normal;">Mon-Fri 8am - 5pm</span></p></div>
-        <div class="item2"><p><span class="furtherDisappear">Call Us: <span style="color: white; font-weight: 200; font-style: normal;">+1 (713) 896-4105</span></span></p></div>
-        <div class="item3"><p><span class="furtherDisappear">Visit Us <span style="color: #FFFFFF;"><span style="color: white; font-weight: 200; font-style: normal;">13150 FM 529 <span class="disappear">#127, Houston, TX</span></span></span></span></p></div>
+        <div class="item2"><p><span class="furtherDisappear">Call Us: <span style="color: white; font-weight: 200; font-style: normal;">+1 (832) 295 3337</span></span></p></div>
+        <div class="item3"><p><span class="furtherDisappear">Visit Us <span style="color: #FFFFFF;"><span style="color: white; font-weight: 200; font-style: normal;">11131 W Little York Rd.<span class="disappear">, Ste G</span></span></span></span></p></div>
     </div>    
 </div>
 

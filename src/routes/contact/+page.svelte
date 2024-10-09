@@ -26,7 +26,8 @@
                 <p>We're open for any suggestion or just to have a chat.</p>
                 <ul class="list">
                     <li>Address: 11131 W Little York, Houston, TX</li>
-                    <li>Phone: +1 (713) 896-4105</li>
+                    <li>Phone: +1 (832)-295-3337, +1 832-295-3803</li>
+                    <li>E-mail: rjsautomotivecenter@gmail.com</li>
                 </ul>
             </div>
         </div>
@@ -61,7 +62,7 @@
     }
 
     .info-info{
-        width: 80%;
+        width: 85%;
     }
 
     .info-info hr{
