@@ -11,6 +11,10 @@
 </script>
 
 <div class="home">
+	<p>Sorry, this website has been locked.</p>
+</div>
+<!-- 
+<div class="home">
 	<section class="landingPage">
 		<div class="topBar">
 			<NavBar></NavBar>
@@ -44,6 +48,8 @@
 <VehicleLove></VehicleLove>
 <GoodCompany></GoodCompany>
 <Footer></Footer>
+-->
+
 <style>
 
 	@media screen and (max-width: 1000px) {
